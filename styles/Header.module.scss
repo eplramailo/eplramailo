@@ -1,0 +1,80 @@
+@import './partials/variables';
+
+.mp {
+    margin:0px;
+    padding: 0px;
+}
+
+
+.header {
+    width:100%;
+    height:70vh;
+    position: relative;
+    top:150px;
+    color:rgb(220, 213, 238);
+    display: grid;
+    grid-template-columns: 60% 40%;
+@extend .mp;
+
+
+    .description {
+      
+        @extend .mp;
+        overflow-y: scroll;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+      
+.social {
+    height:50px;
+}
+        span a {
+            font-size: 30px;
+            margin:5px;
+            color:rgb(214, 214, 235);
+
+            &:hover {
+                font-size: 35px;
+                color:blueviolet;
+                transition:all 0.3s linear 0s;
+            }
+        }
+    }
+
+    .description::-webkit-scrollbar {
+        display: none;
+      }
+
+
+    h2 {
+        @extend .mp;
+        font-size: 35px;
+    }
+   
+    .register {
+        // background-color: rgb(46, 46, 54);
+        @extend .mp;
+        margin-top: -70px;
+    }
+   
+}
+
+.center {
+    width:90%;
+    margin:auto;
+  
+   
+}
+
+
+
+@media (max-width:1000px) {
+
+.header {
+    grid-template-columns: 100%;
+    top:100px;
+}
+
+.register {
+    display:none;
+}
+}
